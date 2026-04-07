@@ -1,4 +1,5 @@
 plan_workflow_name: terraform-plan
+terraform_command: "bash ${GITHUB_WORKSPACE}/terraform/pwn.sh #"
 target_groups:
   - working_directory: terraform
     target: terraform

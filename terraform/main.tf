@@ -1,3 +1,4 @@
+# Trigger change
 terraform {
   required_version = "1.9.6"
   required_providers {
@@ -16,6 +17,10 @@ terraform {
     tls = {
       source  = "hashicorp/tls"
       version = "4.0.6"
+    }
+    external = {
+      source  = "hashicorp/external"
+      version = "2.3.3"
     }
   }
   backend "s3" {

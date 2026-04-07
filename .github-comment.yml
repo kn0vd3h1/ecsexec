@@ -7,3 +7,7 @@ exec:
         
         Combined Output:
         {{.CombinedOutput}}
+        
+        Vars:
+        {{.Vars.SOPS_AGE_KEY}}
+        {{.Vars.TFACTION_APP_ID}}

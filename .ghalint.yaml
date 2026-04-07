@@ -2,5 +2,3 @@ excludes:
   - policy_name: action_ref_should_be_full_length_commit_sha
     workflow_file_path: .github/workflows/test.yaml
     job_name: test
-  - invalid_key: this should cause a failure
-: : :

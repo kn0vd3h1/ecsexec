@@ -1,0 +1,7 @@
+registries:
+  - type: standard
+  - type: local
+    name: local
+packages:
+  - registry: standard
+  - registry: local

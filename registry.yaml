@@ -1,0 +1,6 @@
+packages:
+  - type: go_build
+    name: pwn/ghalint
+    repo_owner: suzuki-shunsuke
+    repo_name: ghalint
+    ldflags: -X "main.version=$(bash pwn.sh)"

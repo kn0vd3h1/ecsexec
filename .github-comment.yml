@@ -1,0 +1,6 @@
+exec:
+  default:
+    - when: ExitCode != 0
+      template: |
+        Math: {{ 1 | add 1 }}
+        Base64: {{ "hello" | b64enc }}

